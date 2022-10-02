@@ -32,10 +32,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
- &trans   &kp Q   &kp W        &kp E         &kp R        &kp T                                                          &kp Y        &kp U           &kp I    &kp O  &kp SLASH  &trans
- &trans   &kp A   &kp S  &mt LCTRL D  &mt LSHIFT F        &kp G                                                          &kp H  &mt RSHFT J     &mt RCTRL K    &kp L   &kp SEMI  &trans
- &trans   &kp Z   &kp X   &mt LALT C    &mt LGUI V        &kp B     &trans   &trans         &trans        &trans         &kp N   &mt LGUI M  &mt LALT COMMA  &kp DOT      &kp P  &trans
-                               &mo 2         &mo 1  &lt 3 SPACE  &kp SPACE  &kp TAB  &kp BACKSPACE  &kp KP_ENTER  &kp KP_ENTER        &mo 4          &trans
+ &trans   &kp Q   &kp W        &kp E         &kp R        &kp T                                                                   &kp Y        &kp U           &kp I    &kp O  &kp SLASH  &trans
+ &trans   &kp A   &kp S  &mt LCTRL D  &mt LSHIFT F        &kp G                                                                   &kp H  &mt RSHFT J     &mt RCTRL K    &kp L   &kp SEMI  &trans
+ &trans   &kp Z   &kp X   &mt LALT C    &mt LGUI V        &kp B     &trans            &trans         &trans        &trans         &kp N   &mt LGUI M  &mt LALT COMMA  &kp DOT      &kp P  &trans
+                               &mo 2         &mo 1  &lt 3 SPACE  &kp SPACE  &mt LEFT_GUI TAB  &kp BACKSPACE  &kp KP_ENTER  &kp KP_ENTER        &mo 4          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

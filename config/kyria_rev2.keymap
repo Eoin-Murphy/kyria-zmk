@@ -32,10 +32,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-  &none   &kp Q   &kp W        &kp E         &kp R        &kp T                                                                   &kp Y        &kp U           &kp I    &kp O  &kp SLASH   &none
-  &none   &kp A   &kp S  &mt LCTRL D  &mt LSHIFT F        &kp G                                                                   &kp H  &mt RSHFT J     &mt RCTRL K    &kp L   &kp SEMI   &none
-  &none   &kp Z   &kp X   &mt LALT C    &mt LGUI V        &kp B      &none             &none          &none         &none         &kp N   &mt LGUI M  &mt LALT COMMA  &kp DOT      &kp P   &none
-                               &mo 2         &mo 1  &lt 3 SPACE  &kp SPACE  &mt LEFT_GUI TAB  &kp BACKSPACE  &kp KP_ENTER  &kp KP_ENTER        &mo 4          &trans
+  &none   &kp Q     &kp W        &kp E         &kp R        &kp T                                                                   &kp Y        &kp U           &kp I       &kp O  &kp SLASH   &none
+  &none   &kp A  &kp LALT  &mt LCTRL D  &mt LSHIFT F        &kp G                                                                   &kp H  &mt RSHFT J     &mt RCTRL K  &mt LALT L   &kp SEMI   &none
+  &none   &kp Z     &kp X   &mt LGUI C    &mt LALT V        &kp B      &none             &none          &none         &none         &kp N   &mt LALT M  &mt LGUI COMMA     &kp DOT      &kp P   &none
+                                 &mo 2         &mo 1  &lt 3 SPACE  &kp SPACE  &mt LEFT_GUI TAB  &kp BACKSPACE  &kp KP_ENTER  &kp KP_ENTER        &mo 4             &mo
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -61,10 +61,10 @@
 
         brackets {
             bindings = <
- &trans         &trans            &trans                &trans          &trans  &trans                                  &trans           &trans                 &trans             &trans            &trans  &trans
- &trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &trans                                  &trans  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
- &trans         &trans            &trans                &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans                 &trans             &trans            &trans  &trans
-                                                        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans                 &trans
+ &trans         &trans            &trans                &trans          &trans  &trans                                  &trans         &kp TILDE               &kp HASH             &trans            &trans  &trans
+ &trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &trans                                  &trans   &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
+ &trans         &trans            &trans                &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES          &kp GRAVE            &trans  &trans
+                                                        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans                 &trans
             >;
         };
 

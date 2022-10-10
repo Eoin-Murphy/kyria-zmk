@@ -22,6 +22,15 @@
         };
     };
 
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -44,8 +53,8 @@
 
         numbers {
             bindings = <
- &trans  &trans         &kp           &kp PIPE     &kp AMPERSAND  &trans                                           &trans  &kp KP_N7        &kp KP_N8        &kp KP_N9     &trans  &trans
- &trans  &trans   &kp GRAVE  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans                                  &kp KP_MULTIPLY  &kp KP_N4        &kp KP_N5        &kp KP_N6  &kp EQUAL  &trans
+ &trans  &trans      &trans           &kp PIPE     &kp AMPERSAND  &trans                                           &trans  &kp KP_N7        &kp KP_N8        &kp KP_N9   &kp STAR  &trans
+ &trans  &trans   &kp GRAVE  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans                                      &kp PERCENT  &kp KP_N4        &kp KP_N5        &kp KP_N6  &kp EQUAL  &trans
  &trans  &trans  &kp DOLLAR        &kp AT_SIGN         &kp CARET  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS  &trans
                                         &trans            &trans  &trans  &trans  &trans  &trans  &trans           &trans     &trans           &trans
             >;

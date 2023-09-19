@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
@@ -33,10 +32,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E       &kp R       &kp T                                            &kp Y         &kp U       &kp I       &kp O    &kp SLASH  &none
-&none  &kp A  &kp S  &kp D       &kp F       &kp G                                            &kp H         &kp J       &kp K       &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C       &kp V       &kp B    &none      &none  &none  &none          &kp N         &kp M       &kp COMMA   &kp DOT  &kp P      &none
-                     &bt BT_CLR  &bt BT_NXT  &kp TAB  &kp SPACE  &none  &none  &kp BACKSPACE  &kp KP_ENTER  &bt BT_NXT  &bt BT_CLR
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T                                            &kp Y         &kp U  &kp I      &kp O    &kp SLASH  &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G                                            &kp H         &kp J  &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C  &kp V  &kp B    &none      &none  &none  &none          &kp N         &kp M  &kp COMMA  &kp DOT  &kp P      &none
+                     &none  &none  &kp TAB  &kp SPACE  &none  &none  &kp BACKSPACE  &kp KP_ENTER  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
